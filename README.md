@@ -1,7 +1,4 @@
 # ICO_Token_CrowdSale
-A smart contract to host the capped ICO
-
-# ICO_Token_CrowdSale
 
 This is a smart contract for simple capped crowdsale by using the Open Zeppelin library
 

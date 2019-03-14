@@ -36,8 +36,17 @@ $truffle compile
 $truffle develop
 migrate --reset
 ```
-1]
-2]
+1) Change the minimum contribution to 5 Ether. (20 points)
+  uint256 public investorMinCap =  5000000000000000000; 
+2) Add method, getTokensLeft, to report how many tokens are left. (30 points)
+
+3) Graduate Students question: Add the needed functionality to not allow more than 1 purchase per account. (40 points)
+   require(_existingContribution == 0); //Check to not allow more than 1 purchase per account. 
+
+
+1]sale.buyTokens(account1, {value : new web3.utils.BN(web3.utils.toWei('2.5', 'ether')) , from : account1});
+2]sale.buyTokens(account1, {value : new web3.utils.BN(web3.utils.toWei('15', 'ether')) , from : account1});
 3]
+4]sale.buyTokens(account1, {value : new web3.utils.BN(web3.utils.toWei('15', 'ether')) , from : account1});// Doesnt Permit
 
 Author:Sohan Sathyan
